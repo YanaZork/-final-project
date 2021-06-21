@@ -1,3 +1,8 @@
 export default function Community(){
-    return(<h1>Community</h1>);
+    return(
+        <div>
+            {/*Поисковая строка*/}
+            {/*Список игроков*/}
+        </div>
+    );
 }
