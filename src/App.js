@@ -9,14 +9,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  useRouteMatch,
-  useParams
+  Link
 } from "react-router-dom";
 
-//npm install @material-ui/icons
-//npm install @material-ui/core
-import HomeIcon from '@material-ui/icons/Home';
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import PeopleOutlineIcon from '@material-ui/icons/PeopleOutline';
 import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
@@ -24,31 +20,14 @@ import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
 function App() {
 
   return (
-    <nav className="container" style={{
-      display: 'flex',
-      flexDirection: 'row',
-      flexWrap: 'nowrap',
-      alignContent: 'center',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }}>
+    <nav className="container">
       <Router >
-        <ul style={{
-          flexDirection: 'column',
-          flexWrap: 'nowrap',
-          alignContent: 'space-between',
-          justifyContent: 'space-evenly',
-          alignItems: 'center',
-          listStyleType: 'none'
-        }}
-
-
-        >
+        <ul className="navbar">
           <li>
-            <Link to="/"><HomeIcon style={{ fontSize: 60 }} /></Link>
+            <Link to="/"><HomeOutlinedIcon style={{ fontSize: 60 }} /></Link>
           </li>
           <li>
-            <Link to="/profile"><PersonOutlineIcon style={{ fontSize: 60 }} /></Link>
+            <Link to="/profile"><PersonOutlineIcon style={{ fontSize: 60 }}/></Link>
           </li>
           <li>
             <Link to="/community"><PeopleOutlineIcon style={{ fontSize: 60 }} /></Link>
@@ -76,18 +55,5 @@ function App() {
     </nav>
   );
 }
-
-/*
-display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: space-between;
-    justify-content: space-evenly;
-    align-items: center;
-
-
-
-function IconGames(icon, name){}
-*/
 
 export default App;

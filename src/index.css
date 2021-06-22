@@ -22,3 +22,50 @@ code {
   flex-flow: row wrap;
   justify-content: space-around;
 }
+
+
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  justify-content:space-evenly;
+
+}
+
+.navbar a {
+  color: #7f0f9b;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  flex-basis: auto;
+  flex-grow: 1;
+  background: linear-gradient(
+    225deg, 
+    rgba(175, 62, 153, 0.178) 0%, 
+    rgba(14, 62, 235, 0.106) 100%);
+  border-radius: 60px;
+  left: 41.67%;
+  right: 41.67%;
+  top: 58.28%;
+  bottom: 16.72%;
+}
+
+.navbar a:hover {
+  background: linear-gradient(
+    225deg, 
+    rgba(175, 62, 153, 0.178) 30%, 
+    rgba(14, 62, 235, 0.106) 100%);
+}
