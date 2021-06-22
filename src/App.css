@@ -1,21 +1,10 @@
-.container {
-  display: flex; /* or inline-flex */
-  flex-flow: row wrap;
-  justify-content: space-around;
 
-  
-}
 
 .App {
   text-align: center;
 }
 
-body{
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(118.3deg, #B6CEE8 2.32%, #F578DC 123.11%);
 
-}
 
 
 @media (prefers-reduced-motion: no-preference) {
