@@ -13,9 +13,9 @@ import {
 
 export default function Additional() {
     return (
-        <Router>
+        <Router className="container">
             <div>
-                <ul>
+                <ul className="navbar2">
                     <li>
                         <Link to="/additional/results">Результаты</Link>
                     </li>
